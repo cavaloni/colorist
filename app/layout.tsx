@@ -16,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Poppins:wght@200&display=swap" rel="stylesheet" />
+      <body style={{fontFamily: "'Pathway Gothic One', sans-serif;"}}>{children}</body>
     </html>
   )
 }
