@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: teal;
+
+    a,
+    button {
+        color: orange;
+    }
+
+    nav ul li a {
+        color: teal;
+    }
+
+    nav ul li a:hover {
+        color: orange;
+    }
+
+    h2,
+    h3 {
+        color: teal;
+    }
+
+    footer {
+        background-color: black;
+        color: teal;
+    }
+
+    footer a {
+        color: orange;
+    }
+
+    footer a:hover {
+        color: teal;
+    }
+}

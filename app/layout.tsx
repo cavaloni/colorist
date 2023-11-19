@@ -16,10 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Poppins:wght@200&display=swap" rel="stylesheet" />
-      <body style={{fontFamily: "'Pathway Gothic One', sans-serif;"}}>{children}</body>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"></link>
+      <body>{children}</body>
     </html>
   )
 }
