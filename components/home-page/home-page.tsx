@@ -16,6 +16,7 @@ import laundryUngraded from '../assets/laundry-ungraded_2.2.1.POST.png'
 import laundryGraded from '../assets/laundry-graded_2.2.1.POST_2.2.3.POST.png'
 import jade1Ungraded from '../assets/jade-ungraded_1.1.6.png'
 import jade1Graded from '../assets/jade-graded_1.1.5.png'
+import ContactForm from '../contact-form/contact-form';
 
 export function HomePage() {
   return (
@@ -34,7 +35,7 @@ export function HomePage() {
         <div className="grid">
           <section>
             <hgroup>
-              <h2 style={{fontSize: "30px"}}>Tell your story with feeling</h2>
+              <h2 style={{fontSize: "30px"}}>See it the way you imagined it.</h2>
             </hgroup>
             <div className='vimeo-container'>
               <Vimeo
@@ -67,8 +68,7 @@ export function HomePage() {
           </section>
         </div>
       </main>
-
-      
+		<ContactForm />
       <footer className="container">
         <small>
           <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
