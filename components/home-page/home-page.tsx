@@ -4,7 +4,8 @@
  */
 'use client'
 import './styles/home-page.scss'
-import ImageSlider from "../ui/image-slider";
+import ReactCompareImage from 'react-compare-image';
+import Vimeo from '@u-wave/react-vimeo';
 
 export function HomePage() {
   return (
@@ -26,10 +27,29 @@ export function HomePage() {
               <h2>Welcome to Colorist Studio</h2>
               <h3>Bringing Films to Life with Color</h3>
             </hgroup>
+			<div className='vimeo-container'>
+				<Vimeo
+					responsive
+					height="540"
+					width="960"
+					className='vimeo-player'
+					video="https://vimeo.com/880281123?share=copy"
+					autoplay
+				/>
+			</div>
             <p>Discover the art of film color grading and how it enhances storytelling.
               Explore our portfolio to see our work on various film projects.</p>
-            <div>
-              <ImageSlider />
+            <div className='image-slider-container'>
+			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
+			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
+            </div>
+			<div className='image-slider-container'>
+			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
+			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
+            </div>
+			<div className='image-slider-container'>
+			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
+			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
             </div>
             <h3>About Our Work</h3>
             <p>We specialize in color grading, bringing a unique visual style to every film project.

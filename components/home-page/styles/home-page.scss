@@ -32,4 +32,37 @@ body {
     footer a:hover {
         color: teal;
     }
+
+	.image-slider-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		div {
+			margin: 10px;
+			flex-basis: 40%;
+		}
+	}
+	@media (max-width: 600px) {
+		.image-slider-container {
+			display: flex;
+			flex: 1;
+			div {
+				flex-basis: 100%;
+			}
+		}
+	}
+
+	.vimeo-container {
+		width: 100%;
+		margin-bottom: 100px;
+		.vimeo-player {
+			height:100%;
+			width:100%;
+			// display: flex
+			// justify-content: center;
+			// align-items: center;
+		}
+	}
 }
+
