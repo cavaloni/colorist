@@ -6,6 +6,16 @@
 import './styles/home-page.scss'
 import ReactCompareImage from 'react-compare-image';
 import Vimeo from '@u-wave/react-vimeo';
+import abbottUngraded from '../assets/abbott-ungraded_3.3.4.png'
+import abbottGraded from '../assets/abbott-graded_3.3.1.POST.png'
+import jade2Ungraded from '../assets/jade2-ungraded_2.1.3.POST.png'
+import jade2Graded from '../assets/jade2-graded_2.1.2.POST.png'
+import curtisUngraded from '../assets/curtis-ungraded_3.4.2.png'
+import curtisGraded from '../assets/curtis-graded_3.4.1.png'
+import laundryUngraded from '../assets/laundry-ungraded_2.2.1.POST.png'
+import laundryGraded from '../assets/laundry-graded_2.2.1.POST_2.2.3.POST.png'
+import jade1Ungraded from '../assets/jade-ungraded_1.1.6.png'
+import jade1Graded from '../assets/jade-graded_1.1.5.png'
 
 export function HomePage() {
   return (
@@ -27,29 +37,29 @@ export function HomePage() {
               <h2>Welcome to Colorist Studio</h2>
               <h3>Bringing Films to Life with Color</h3>
             </hgroup>
-			<div className='vimeo-container'>
-				<Vimeo
-					responsive
-					height="540"
-					width="960"
-					className='vimeo-player'
-					video="https://vimeo.com/880281123?share=copy"
-					autoplay
-				/>
-			</div>
+            <div className='vimeo-container'>
+              <Vimeo
+                responsive
+                height="540"
+                width="960"
+                className='vimeo-player'
+                video="https://vimeo.com/880281123?share=copy"
+                autoplay
+              />
+            </div>
             <p>Discover the art of film color grading and how it enhances storytelling.
               Explore our portfolio to see our work on various film projects.</p>
             <div className='image-slider-container'>
-			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
-			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
+              <ReactCompareImage leftImage={abbottUngraded.src} rightImage={abbottGraded.src} />
+              <ReactCompareImage leftImage={jade2Ungraded.src} rightImage={jade2Graded.src} />
             </div>
-			<div className='image-slider-container'>
-			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
-			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
+            <div className='image-slider-container'>
+              <ReactCompareImage leftImage={laundryUngraded.src} rightImage={laundryGraded.src} />
+              <ReactCompareImage leftImage={curtisUngraded.src} rightImage={curtisGraded.src} />
             </div>
-			<div className='image-slider-container'>
-			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
-			  <ReactCompareImage leftImage='https://i.imgur.com/s08MkXC.jpg' rightImage='https://i.imgur.com/PfIWek4.jpg' />
+            <div className='image-slider-container'>
+              <ReactCompareImage leftImage={jade1Ungraded.src} rightImage={jade1Graded.src} />
+              {/* <ReactCompareImage leftImage={} rightImage={} /> */}
             </div>
             <h3>About Our Work</h3>
             <p>We specialize in color grading, bringing a unique visual style to every film project.
