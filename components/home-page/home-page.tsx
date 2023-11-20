@@ -22,7 +22,7 @@ export function HomePage() {
     <div className="App">
       <nav className="container-fluid">
         <ul>
-          <li><strong>Colorist Studio</strong></li>
+          <li><strong>Chad Avalon Color</strong></li>
         </ul>
         <ul>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -34,8 +34,7 @@ export function HomePage() {
         <div className="grid">
           <section>
             <hgroup>
-              <h2>Welcome to Colorist Studio</h2>
-              <h3>Bringing Films to Life with Color</h3>
+              <h2 style={{fontSize: "30px"}}>Tell your story with feeling</h2>
             </hgroup>
             <div className='vimeo-container'>
               <Vimeo
@@ -47,8 +46,8 @@ export function HomePage() {
                 autoplay
               />
             </div>
-            <p>Discover the art of film color grading and how it enhances storytelling.
-              Explore our portfolio to see our work on various film projects.</p>
+            <p>Work together to find the precise look you want</p>
+              <h3>And bring your vision to life</h3>
             <div className='image-slider-container'>
               <ReactCompareImage leftImage={abbottUngraded.src} rightImage={abbottGraded.src} />
               <ReactCompareImage leftImage={jade2Ungraded.src} rightImage={jade2Graded.src} />
@@ -61,32 +60,15 @@ export function HomePage() {
               <ReactCompareImage leftImage={jade1Ungraded.src} rightImage={jade1Graded.src} />
               {/* <ReactCompareImage leftImage={} rightImage={} /> */}
             </div>
-            <h3>About Our Work</h3>
-            <p>We specialize in color grading, bringing a unique visual style to every film project.
-              Our expertise lies in understanding the director's vision and translating it into vibrant,
-              emotive color palettes.</p>
-            <h3>Our Portfolio</h3>
-            <p>From independent short films to major cinematic productions, our portfolio showcases a range
-              of projects that highlight our color grading skills.</p>
+            <h3>Working together</h3>
+            <p>Collaborate to bring out the exact feeling you're looking for</p>
+            <h3>The final touch</h3>
+            <p>Most often the last stop before your release, we'll add that final feel your hard work has lead you to.</p>
           </section>
         </div>
       </main>
 
-      <section aria-label="Contact Form">
-        <div className="container">
-          <article>
-            <hgroup>
-              <h2>Contact Us</h2>
-              <h3>Get in Touch for Color Grading Services</h3>
-            </hgroup>
-            <form className="grid">
-              <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required />
-              <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
-              <button type="submit" onClick={(e) => e.preventDefault()}>Send Message</button>
-            </form>
-          </article>
-        </div>
-      </section>
+      
       <footer className="container">
         <small>
           <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
