@@ -6,16 +6,6 @@
 import './styles/home-page.scss'
 import ReactCompareImage from 'react-compare-image';
 import Vimeo from '@u-wave/react-vimeo';
-import abbottUngraded from '../../public/assets/abbott-ungraded_3.3.4.png'
-import abbottGraded from '../../public/assets/abbott-graded_3.3.1.POST.png'
-import jade2Ungraded from '../../public/assets/jade2-ungraded_2.1.3.POST.png'
-import jade2Graded from '../../public/assets/jade2-graded_2.1.2.POST.png'
-import curtisUngraded from '../../public/assets/curtis-ungraded_3.4.2.png'
-import curtisGraded from '../../public/assets/curtis-graded_3.4.1.png'
-import laundryUngraded from '../../public/assets/laundry-ungraded_2.2.1.POST.png'
-import laundryGraded from '../../public/assets/laundry-graded_2.2.1.POST_2.2.3.POST.png'
-import jade1Ungraded from '../../public/assets/jade-ungraded_1.1.6.png'
-import jade1Graded from '../../public/assets/jade-graded_1.1.5.png'
 import ContactForm from '../contact-form/contact-form';
 
 export function HomePage() {
@@ -50,15 +40,15 @@ export function HomePage() {
             <p>Work together to find the precise look you want</p>
               <h3>And bring your vision to life</h3>
             <div className='image-slider-container'>
-              <ReactCompareImage leftImage={abbottUngraded.src} rightImage={abbottGraded.src} />
-              <ReactCompareImage leftImage={jade2Ungraded.src} rightImage={jade2Graded.src} />
+              <ReactCompareImage leftImage={"/assets/abbott-ungraded_3.3.4.png"} rightImage={"/assets/abbott-graded_3.3.1.POST.png"} />
+              <ReactCompareImage leftImage={"/assets/jade2-ungraded_2.1.3.POST.png"} rightImage={"/assets/jade2-graded_2.1.2.POST.png"} />
             </div>
             <div className='image-slider-container'>
-              <ReactCompareImage leftImage={laundryUngraded.src} rightImage={laundryGraded.src} />
-              <ReactCompareImage leftImage={curtisUngraded.src} rightImage={curtisGraded.src} />
+              <ReactCompareImage leftImage={"/assets/curtis-ungraded_3.4.2.png"} rightImage={"/assets/curtis-graded_3.4.1.png"} />
+              <ReactCompareImage leftImage={"/assets/laundry-ungraded_2.2.1.POST.png"} rightImage={'/assets/laundry-graded_2.2.1.POST_2.2.3.POST.png'} />
             </div>
             <div className='image-slider-container'>
-              <ReactCompareImage leftImage={jade1Ungraded.src} rightImage={jade1Graded.src} />
+              <ReactCompareImage leftImage={'/assets/jade-ungraded_1.1.6.png'} rightImage={'/assets/jade-graded_1.1.5.png'} />
               {/* <ReactCompareImage leftImage={} rightImage={} /> */}
             </div>
             <h3>Working together</h3>
