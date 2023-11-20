@@ -62,9 +62,9 @@ export function HomePage() {
               {/* <ReactCompareImage leftImage={} rightImage={} /> */}
             </div>
             <h3>Working together</h3>
-            <p>Collaborate to bring out the exact feeling you're looking for</p>
+            <p>Collaborate to bring out the exact feeling you&apos;re looking for</p>
             <h3>The final touch</h3>
-            <p>Most often the last stop before your release, we'll add that final feel your hard work has lead you to.</p>
+            <p>Most often the last stop before your release, we&apos;ll add that final feel your hard work has lead you to.</p>
           </section>
         </div>
       </main>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 import axios from 'axios'; // You need to install axios
 
 const ContactForm = () => {
@@ -10,11 +10,11 @@ const ContactForm = () => {
 
   const [submitted, updateSubmitted] = useState(false)
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Here you would send the data to your server or an email API
@@ -30,7 +30,7 @@ const ContactForm = () => {
 
   return (
     <section aria-label="Contact Form">
-	  {submitted ? <h3 style={{ marginLeft: "20%"}}>Thanks! We'll be in touch soon.</h3> :
+	  {submitted ? <h3 style={{ marginLeft: "20%"}}>Thanks! We&apos;ll be in touch soon.</h3> :
       <div className="container">
         <article>
           <hgroup>
