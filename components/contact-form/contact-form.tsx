@@ -29,13 +29,13 @@ const ContactForm = () => {
   };
 
   return (
-    <section aria-label="Contact Form">
+    <section aria-label="Contact Form" id="contact">
 	  {submitted ? <h3 style={{ marginLeft: "20%"}}>Thanks! We&apos;ll be in touch soon.</h3> :
       <div className="container">
         <article>
           <hgroup>
             <h2>Contact Us</h2>
-            <h3>Get in Touch for Color Grading Services</h3>
+            <h3>Lets do this</h3>
           </hgroup>
           <form className="contact" onSubmit={handleSubmit}>
             <input

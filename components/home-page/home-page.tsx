@@ -17,7 +17,6 @@ export function HomePage() {
         </ul>
         <ul>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
           <li><a href="#contact" role="button">Contact</a></li>
         </ul>
       </nav>
@@ -39,18 +38,20 @@ export function HomePage() {
             </div>
             <p>Work together to find the precise look you want</p>
               <h3>And bring your vision to life</h3>
-            <div className='image-slider-container'>
-              <ReactCompareImage leftImage={"/assets/abbott-ungraded_3.3.4.png"} rightImage={"/assets/abbott-graded_3.3.1.POST.png"} />
-              <ReactCompareImage leftImage={"/assets/jade2-ungraded_2.1.3.POST.png"} rightImage={"/assets/jade2-graded_2.1.2.POST.png"} />
-            </div>
-            <div className='image-slider-container'>
-              <ReactCompareImage leftImage={"/assets/curtis-ungraded_3.4.2.png"} rightImage={"/assets/curtis-graded_3.4.1.png"} />
-              <ReactCompareImage leftImage={"/assets/laundry-ungraded_2.2.1.POST.png"} rightImage={'/assets/laundry-graded_2.2.1.POST_2.2.3.POST.png'} />
-            </div>
-            <div className='image-slider-container'>
-              <ReactCompareImage leftImage={'/assets/jade-ungraded_1.1.6.png'} rightImage={'/assets/jade-graded_1.1.5.png'} />
-              {/* <ReactCompareImage leftImage={} rightImage={} /> */}
-            </div>
+			<div id="portfolio">
+	            <div className='image-slider-container'>
+	              <ReactCompareImage leftImage={"/assets/abbott-ungraded_3.3.4.png"} rightImage={"/assets/abbott-graded_3.3.1.POST.png"} />
+	              <ReactCompareImage leftImage={"/assets/jade2-ungraded_2.1.3.POST.png"} rightImage={"/assets/jade2-graded_2.1.2.POST.png"} />
+	            </div>
+	            <div className='image-slider-container'>
+	              <ReactCompareImage leftImage={"/assets/curtis-ungraded_3.4.2.png"} rightImage={"/assets/curtis-graded_3.4.1.png"} />
+	              <ReactCompareImage leftImage={"/assets/laundry-ungraded_2.2.1.POST.png"} rightImage={'/assets/laundry-graded_2.2.1.POST_2.2.3.POST.png'} />
+	            </div>
+	            <div className='image-slider-container'>
+	              <ReactCompareImage leftImage={'/assets/jade-ungraded_1.1.6.png'} rightImage={'/assets/jade-graded_1.1.5.png'} />
+	              {/* <ReactCompareImage leftImage={} rightImage={} /> */}
+	            </div>
+			</div>
             <h3>Working together</h3>
             <p>Collaborate to bring out the exact feeling you&apos;re looking for</p>
             <h3>The final touch</h3>
